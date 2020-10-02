@@ -158,9 +158,9 @@
                 {
                   'id': "<?php echo $id ?>",
                   'titulo': "<?php echo $id ?>",
-                  'fecha': '$0',
-                  'mensaje': 'Reunión negociacion',
-                  'enlace': 'teams.ms/dummy21x'
+                  'fecha': "<?php echo $id ?>",
+                  'mensaje': "<?php echo $id ?>",
+                  'enlace': "<?php echo $id ?>"
                 }
               ]
               $table.bootstrapTable({data: data})
