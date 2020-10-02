@@ -112,11 +112,14 @@
           if (mysqli_connect_errno()) {
               printf("Connect failed: %s\n", mysqli_connect_error());
               exit();
-          } else {
-            echo "Conexion Exitosa";
-          }
-          
+          } 
+
           $identificador->set_charset("utf8");
+
+          $consultasql = "SELECT id, comunicado, fecha, descripcion FROM procesos WHERE id_user = 3";
+          $resultadosql = mysqli_query($identificador,$consultasql);
+
+          echo $resultadosql;
 
         ?>
 
