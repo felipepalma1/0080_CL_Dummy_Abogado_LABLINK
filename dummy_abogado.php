@@ -157,11 +157,11 @@
 
               var data = [
                 {
-                  'id': "<?php echo $descripcion ?>",
-                  'titulo': "x",
-                  'fecha': "x",
-                  'mensaje': "x",
-                  'enlace': "<?php echo $id ?>"
+                  'id': "<?php echo $id ?>",
+                  'titulo': "<?php echo $comunicado ?>",
+                  'fecha': "<?php echo $fecha ?>",
+                  'mensaje': "<?php echo "Mensaje" ?>",
+                  'enlace': "<?php echo "teams.ms/dsa21" ?>"
                 }
               ]
               $table.bootstrapTable({data: data})
