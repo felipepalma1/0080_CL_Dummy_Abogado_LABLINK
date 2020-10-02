@@ -145,19 +145,11 @@
                 <th data-field="enlace">Enlace</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>3</td>
-                <td>2</td>
-                <td>4</td>
-                <td>21</td>
-              </tr> 
-            </tbody>
+            
           </table>
 
         </div>
-          <!-- <script>
+          <script>
             var $table = $('#table')
 
             $(function() {
@@ -166,7 +158,7 @@
               var data = [
                 {
                   'id': "<?php echo $id ?>",
-                  'titulo': "<?php echo $comunicado ?>",
+                  'titulo': '',
                   'fecha': "<?php echo $fecha ?>",
                   'mensaje': "<?php echo $descripcion ?>",
                   'enlace': "<?php echo $id ?>"
@@ -174,7 +166,7 @@
               ]
               $table.bootstrapTable({data: data})
             })
-          </script> -->
+          </script>
     
     </body>
 </html>
