@@ -106,7 +106,18 @@
         <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
 
         <?php
-          echo "Papa Johns";
+          
+          $identificador = mysqli_connect('mysql.laboralink.cl', 'laborali_root', '43dsfs*a.12', 'laborali_casos');
+
+          if (mysqli_connect_errno()) {
+              printf("Connect failed: %s\n", mysqli_connect_error());
+              exit();
+          } else {
+            echo "Conexion Exitosa";
+          }
+          
+          $identificador->set_charset("utf8");
+
         ?>
 
         <div class="container">
