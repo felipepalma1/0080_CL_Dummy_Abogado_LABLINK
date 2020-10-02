@@ -119,7 +119,17 @@
           $consultasql = "SELECT id, comunicado, fecha, descripcion FROM procesos WHERE id_user = 3";
           $resultadosql = mysqli_query($identificador,$consultasql);
 
-          echo $resultadosql;
+          if($sql = mysqli_fetch_array($resultadosql)){
+              $id=$sql['id'];
+              $comunicado=$sql['comunicado'];
+              $fecha=$sql['fecha'];
+              $descripcion=$sql['descripcion'];
+          }
+
+          echo "$id, $comunicado, $fecha, $descripcion";
+
+
+          
 
         ?>
 
