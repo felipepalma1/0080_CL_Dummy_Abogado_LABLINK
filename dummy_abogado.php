@@ -105,6 +105,7 @@
 
 <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
 
+        <div class="container">
 <table id="table">
   <thead>
     <tr>
@@ -114,7 +115,7 @@
     </tr>
   </thead>
 </table>
-
+        </div>
 <script>
   var $table = $('#table')
 
