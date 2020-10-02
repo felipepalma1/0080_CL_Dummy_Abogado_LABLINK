@@ -110,8 +110,10 @@
   <thead>
     <tr>
       <th data-field="id">ID</th>
-      <th data-field="name">Item Name</th>
-      <th data-field="price">Item Price</th>
+      <th data-field="titulo">Título</th>
+      <th data-field="fecha">Fecha</th>
+      <th data-field="mensaje">Mensaje</th>
+      <th data-field="enlace">Enlace</th>
     </tr>
   </thead>
 </table>
@@ -123,8 +125,10 @@
     var data = [
       {
         'id': 0,
-        'name': 'Item 0',
-        'price': '$0'
+        'titulo': 'Item 0',
+        'fecha': '$0',
+        'mensaje': 'Reunión negociacion',
+        'enlace': 'teams.ms/dummy21x'
       },
       {
         'id': 1,
