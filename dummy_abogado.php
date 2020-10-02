@@ -56,6 +56,39 @@
   		  </tr>
       </tbody></table> 
       </form>
+
+        <div class="container mb-5 mt-5">
+        <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step stepactual">1</div>
+            <div class="stept steptactual d-none d-sm-block">Preparación Demanda</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">2</div>
+            <div class="stept d-none d-sm-block">Demanda enviada a firma</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">3</div>
+            <div class="stept d-none d-sm-block">Demanda aceptada</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">4</div>
+            <div class="stept d-none d-sm-block">Demanda presentada en tribunales</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">5</div>
+            <div class="stept d-none d-sm-block">Etapa judicial</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">6</div>
+            <div class="stept d-none d-sm-block">Término</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        
+        </div>
+    </div>
     </div>
     </body>
 </html>
