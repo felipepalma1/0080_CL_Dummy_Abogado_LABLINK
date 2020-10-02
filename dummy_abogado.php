@@ -159,7 +159,7 @@
                 {
                   'id': "<?php echo $id ?>",
                   'titulo': "x",
-                  'fecha': "<?php echo $fecha ?>",
+                  'fecha': "x",
                   'mensaje': "<?php echo $descripcion ?>",
                   'enlace': "<?php echo $id ?>"
                 }
