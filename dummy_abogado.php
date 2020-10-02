@@ -133,6 +133,23 @@
           
 
         ?>
+        <?php
+
+          $return_arr = array();
+
+          while ($row = mysqli_fetch_array($resultadosql)) {
+              $row_array['id'] = $row['id'];
+              $row_array['titulo'] = $row['comunicado'];
+              $row_array['fecha'] = $row['fecha'];
+              $row_array['mensaje'] = "Cita abogado";
+              $row_array['enlace'] = "teams.ms/xjsa";
+
+              array_push($return_arr,$row_array);
+          }
+
+          echo json_encode($return_arr);
+
+        ?>
 
         <div class="container">
           <table id="table">
@@ -153,6 +170,9 @@
             var $table = $('#table')
 
             $(function() {
+
+              
+              
               
               var data = [
               
