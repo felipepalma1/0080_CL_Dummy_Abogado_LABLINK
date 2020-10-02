@@ -127,7 +127,7 @@
               $descripcion=$sql['descripcion'];
           }
 
-          echo "$id, $comunicado, $fecha, $descripcion";
+          // echo "$id, $comunicado, $fecha, $descripcion";
 
 
           
@@ -157,7 +157,7 @@
               var data = [
                 {
                   'id': "<?php echo $id ?>",
-                  'titulo': 'Item 0',
+                  'titulo': "<?php echo $id ?>",
                   'fecha': '$0',
                   'mensaje': 'Reunión negociacion',
                   'enlace': 'teams.ms/dummy21x'
