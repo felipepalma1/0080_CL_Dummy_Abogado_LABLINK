@@ -157,9 +157,9 @@
               var data = [
                 {
                   'id': "<?php echo $id ?>",
-                  'titulo': "<?php echo $comunicado ?>"
-                  'fecha': "<?php echo $fecha ?>",
-                  'mensaje': "<?php echo $descripcion ?>",
+                  'titulo': 'Item 0',
+                  'fecha': '$0',
+                  'mensaje': 'Reunión negociacion',
                   'enlace': 'teams.ms/dummy21x'
                 }
               ]
