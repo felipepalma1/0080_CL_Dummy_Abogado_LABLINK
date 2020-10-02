@@ -163,7 +163,7 @@
                     $row_array['id'] = $row['id'];
                     $row_array['titulo'] = $row['comunicado'];
                     $row_array['fecha'] = $row['fecha'];
-                    $row_array['mensaje'] = "Cita abogado";
+                    $row_array['mensaje'] = $row['descripcion'];
                     $row_array['enlace'] = "teams.ms/xjsa";
 
                     array_push($return_arr,$row_array);
