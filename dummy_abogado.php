@@ -156,16 +156,7 @@
               
               var data = [
               
-
-              <?php
-                while($row = mysqli_fetch_array($resultadosql)){
-                  echo " {
-                  'id':" . $id . " , 
-                  'titulo': ". $comunicado . ",
-                  'fecha': " . $fecha . " ,
-                  'mensaje': 'Mensaje',
-                  'enlace': 'teams.ms/dsa21'},";
-              ?>{
+                {
                   'id': "",
                   'titulo': "",
                   'fecha': "",
