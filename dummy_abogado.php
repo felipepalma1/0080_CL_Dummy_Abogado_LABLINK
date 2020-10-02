@@ -117,7 +117,8 @@
           $identificador->set_charset("utf8");
 
           $consultasql = "SELECT id, comunicado, fecha, descripcion FROM procesos WHERE id_user = 3";
-          $resultadosql = mysqli_query($identificador,$consultasql);
+          $consultasql2 = "SELECT id, comunicado, fecha, descripcion FROM procesos WHERE id_user = 1 ORDER BY fecha DESC";
+          $resultadosql = mysqli_query($identificador,$consultasql2);
 
           if($sql = mysqli_fetch_array($resultadosql)){
               $id=$sql['id'];
