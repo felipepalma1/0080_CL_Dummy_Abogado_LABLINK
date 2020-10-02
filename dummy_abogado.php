@@ -38,6 +38,69 @@
         <input type="hidden" name="hi" value="">
         <input type="hidden" name="id_typep" value="1">
 
+      <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>  
+
+      <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+      <tbody><tr class="catalogo">
+   			  <td align="center" class="topcat">17.118.356-1  </td>
+   			  <td class="topcat">
+            Materia: Despido         	</td>
+      </tr>
+    </tbody></table>
+      <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+      <tbody><tr class="catalogo">
+  			<td align="right" class="">
+  		  	      <input type="SUBMIT" name="list" value="Ver Antecedentes" class="btn btn_primario pl-5 pr-5 mb-3">
+  			</td> 
+        <td align="right" class="">
+          <a href="products.php?c=1&amp;creaproc=1" class="btn btn_primario pl-5 pr-5 mb-3">Expediente Virtual</a>
+        </td> 
+        <td align="right" class="">
+          <a href="products.php?c=1&amp;creaproc=2" class="btn btn_primario pl-5 pr-5 mb-3">Comunicados</a>
+        </td> 
+        <td align="right" class="">
+          <a href="#" class="btn btn_primario pl-5 pr-5 mb-3">Calendario</a>
+        </td>
+  		  </tr>
+      </tbody></table> 
+      </form>
+
+        <div class="container mb-5 mt-5">
+        <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step stepactual">1</div>
+            <div class="stept steptactual d-none d-sm-block">Preparación Demanda</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">2</div>
+            <div class="stept d-none d-sm-block">Demanda enviada a firma</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">3</div>
+            <div class="stept d-none d-sm-block">Demanda aceptada</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">4</div>
+            <div class="stept d-none d-sm-block">Demanda presentada en tribunales</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">5</div>
+            <div class="stept d-none d-sm-block">Etapa judicial</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+            <div class="step">6</div>
+            <div class="stept d-none d-sm-block">Término</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        
+        </div>
+        </div>
+        </div>
+
+        
         <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
 
 <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
