@@ -38,6 +38,9 @@
         <input type="hidden" name="hi" value="">
         <input type="hidden" name="id_typep" value="1">
 
+      <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>  
+
       <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
       <tbody><tr class="catalogo">
    			  <td align="center" class="topcat">17.118.356-1  </td>
