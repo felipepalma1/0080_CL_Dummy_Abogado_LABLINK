@@ -157,9 +157,9 @@
               var data = [
                 {
                   'id': "<?php echo $id ?>",
-                  'titulo': "<?php echo $id ?>",
-                  'fecha': "<?php echo $id ?>",
-                  'mensaje': "<?php echo $id ?>",
+                  'titulo': "<?php echo $comunicado ?>",
+                  'fecha': "<?php echo $fecha ?>",
+                  'mensaje': "<?php echo $descripcion ?>",
                   'enlace': "<?php echo $id ?>"
                 }
               ]
