@@ -103,37 +103,42 @@
         
         <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
 
-<script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+
+        <?php
+          echo "Papa Johns";
+        ?>
 
         <div class="container">
-<table id="table">
-  <thead>
-    <tr>
-      <th data-field="id">ID</th>
-      <th data-field="titulo">Título</th>
-      <th data-field="fecha">Fecha</th>
-      <th data-field="mensaje">Mensaje</th>
-      <th data-field="enlace">Enlace</th>
-    </tr>
-  </thead>
-</table>
-        </div>
-<script>
-  var $table = $('#table')
+          <table id="table">
+            <thead>
+              <tr>
+                <th data-field="id">ID</th>
+                <th data-field="titulo">Título</th>
+                <th data-field="fecha">Fecha</th>
+                <th data-field="mensaje">Mensaje</th>
+                <th data-field="enlace">Enlace</th>
+              </tr>
+            </thead>
+          </table>
 
-  $(function() {
-    var data = [
-      {
-        'id': 0,
-        'titulo': 'Item 0',
-        'fecha': '$0',
-        'mensaje': 'Reunión negociacion',
-        'enlace': 'teams.ms/dummy21x'
-      }
-    ]
-    $table.bootstrapTable({data: data})
-  })
-</script>
+        </div>
+          <script>
+            var $table = $('#table')
+
+            $(function() {
+              var data = [
+                {
+                  'id': 0,
+                  'titulo': 'Item 0',
+                  'fecha': '$0',
+                  'mensaje': 'Reunión negociacion',
+                  'enlace': 'teams.ms/dummy21x'
+                }
+              ]
+              $table.bootstrapTable({data: data})
+            })
+          </script>
     
     </body>
 </html>
