@@ -154,23 +154,35 @@
 
             $(function() {
               
+              var data = [
+              
+
               <?php
                 while($row = mysqli_fetch_array($resultadosql)){
-
-                  $texto = <<<EOD
-                  'id': "<?php echo $id ?>",
-                  'titulo': "<?php echo $comunicado ?>",
-                  'fecha': "<?php echo $fecha ?>",
-                  'mensaje': "<?php echo "Mensaje" ?>",
-                  'enlace': "<?php echo "teams.ms/dsa21" ?>"
-                  EOD;
+                  echo " {
+                  'id':" . $id . " , 
+                  'titulo': ". $comunicado . ",
+                  'fecha': " . $fecha . " ,
+                  'mensaje': 'Mensaje',
+                  'enlace': 'teams.ms/dsa21'},";
+              ?>{
+                  'id': "",
+                  'titulo': "",
+                  'fecha': "",
+                  'mensaje': "",
+                  'enlace': ""
                 }
+              ]
 
-                 echo "var data [$texto]"; 
-                  
-              ?>
-
-              
+              // var data = [
+              //   {
+              //     'id': "<?php echo $id ?>",
+              //     'titulo': "<?php echo $comunicado ?>",
+              //     'fecha': "<?php echo $fecha ?>",
+              //     'mensaje': "<?php echo "Mensaje" ?>",
+              //     'enlace': "<?php echo "teams.ms/dsa21" ?>"
+              //   }
+              // ]
               $table.bootstrapTable({data: data})
             })
           </script>
