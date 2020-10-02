@@ -152,9 +152,11 @@
             var $table = $('#table')
 
             $(function() {
+              
+
               var data = [
                 {
-                  'id': 0,
+                  'id': "<?php echo $id ?>",
                   'titulo': 'Item 0',
                   'fecha': '$0',
                   'mensaje': 'Reunión negociacion',
