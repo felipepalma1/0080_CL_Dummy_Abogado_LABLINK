@@ -120,12 +120,12 @@
           $consultasql2 = "SELECT id, comunicado, fecha, descripcion FROM procesos WHERE id_user = 1 ORDER BY fecha DESC";
           $resultadosql = mysqli_query($identificador,$consultasql);
 
-          if($sql = mysqli_fetch_array($resultadosql)){
-              $id=$sql['id'];
-              $comunicado=$sql['comunicado'];
-              $fecha=$sql['fecha'];
-              $descripcion=$sql['descripcion'];
-          }
+          // if($sql = mysqli_fetch_array($resultadosql)){
+          //     $id=$sql['id'];
+          //     $comunicado=$sql['comunicado'];
+          //     $fecha=$sql['fecha'];
+          //     $descripcion=$sql['descripcion'];
+          // }
 
           // echo "$id, $comunicado, $fecha, $descripcion";
 
@@ -154,16 +154,23 @@
 
             $(function() {
               
+              <?php
+                while($row = mysqli_fetch_array($resultadosql)){
 
-              var data = [
-                {
+                  $texto = <<<EOD
                   'id': "<?php echo $id ?>",
                   'titulo': "<?php echo $comunicado ?>",
                   'fecha': "<?php echo $fecha ?>",
                   'mensaje': "<?php echo "Mensaje" ?>",
                   'enlace': "<?php echo "teams.ms/dsa21" ?>"
+                  EOD;
                 }
-              ]
+
+                 echo "var data [$texto]"; 
+                  
+              ?>
+
+              
               $table.bootstrapTable({data: data})
             })
           </script>
